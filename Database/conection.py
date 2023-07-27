@@ -7,7 +7,7 @@ import os
 
 from sqlalchemy.ext.declarative import declarative_base
 
-load_dotenv()
+#load_dotenv(dotenv_path=None)
 
 conexion_bd = os.getenv('ConexionBD')
 
