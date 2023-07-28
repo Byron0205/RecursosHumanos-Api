@@ -23,6 +23,7 @@ origins = [
     "http://localhost",
     "http://localhost:5000",
     "http://localhost:8080",
+    "http://localhost:3000",
     "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/"
 ]
 
