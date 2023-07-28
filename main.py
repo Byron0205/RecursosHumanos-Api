@@ -8,12 +8,33 @@ from Database.conection import session,base, motor
 from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 
+#solucionar problemas de cors
+from fastapi.middleware.cors import CORSMiddleware
 
 #importar modelos
 from models.Persona import personas 
 
 app= FastAPI()
 app.title= 'Api Recursos Humanos'
+
+
+#configuracion del cors
+origins = [
+    "http://localhost",
+    "http://localhost:5000",
+    "http://localhost:8080",
+    "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/"
+]
+
+# Configurar el middleware de CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
+
 
 #inicializacion de bd
 base.metadata.create_all(bind=motor)
