@@ -24,7 +24,7 @@ origins = [
     "http://localhost:5000",
     "http://localhost:8080",
     "http://localhost:3000",
-    "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/",
+    "https://ti-usr3-cp.cuc-carrera-ti.ac.cr",
     "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/registro/1",
     "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/registro/2",
 ]
