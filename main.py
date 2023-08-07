@@ -27,6 +27,7 @@ origins = [
     "https://ti-usr3-cp.cuc-carrera-ti.ac.cr",
     "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/registro/1",
     "https://ti-usr3-cp.cuc-carrera-ti.ac.cr/registro/2",
+    "https://dragonic.netlify.app/"
 ]
 
 # Configurar el middleware de CORS
